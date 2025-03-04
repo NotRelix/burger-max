@@ -60,13 +60,22 @@ button {
   background-color: #386641;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 70%;
+  gap: 64px;
+}
+
+/* Top Section */
 .top-content {
   display: flex;
   justify-self: center;
   align-items: center;
   padding: 60px 36px;
   gap: 36px;
-  max-width: 70%;
 }
 
 .hero-banner {
@@ -94,4 +103,9 @@ button {
   font-size: 16px;
   padding: 12px 48px;
   border-radius: 16px;
+}
+
+/* Middle Section */
+.body-content {
+  color: var(--light-text);
 }
