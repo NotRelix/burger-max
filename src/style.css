@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --nav-background: #003049;
+  --light-text: #e0e1dd;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8vw;
+  background-color: var(--nav-background);
+  color: var(--light-text);
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav > button {
+  font-size: 14px;
+  padding: 8px 24px;
+  color: var(--light-text);
+}
+
+button {
+  border-radius: 8px;
+  border-style: none;
+}
+
+.home-btn {
+  background-color: #e63946;
+}
+
+.menu-btn {
+  background-color: #e76f51;
+}
+
+.about-btn {
+  background-color: #386641;
 }
