@@ -131,3 +131,38 @@ td {
   border-left: 1px solid var(--lighter-text);
   color: var(--lighter-text);
 }
+
+/* Bottom Section */
+.bottom-content {
+  display: flex;
+  gap: 36px;
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  flex: 5;
+}
+
+.contact-content > h1 {
+  color: var(--light-text)
+}
+
+.contact-content > p {
+  color: var(--lighter-text);
+}
+
+.form-container {
+  padding: 8px;
+  flex: 3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--light-text);
+}
