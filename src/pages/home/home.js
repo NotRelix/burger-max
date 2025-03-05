@@ -1,5 +1,5 @@
-import './style.css';
-import burgerMaxImage from '../public/burger-max.png';
+import './home.css';
+import burgerMaxImage from '../../assets/burger-max.png';
 
 function createElemWithClass(elemName, className) {
   const newElem = document.createElement(elemName);
@@ -8,29 +8,8 @@ function createElemWithClass(elemName, className) {
 }
 
 function home() {
-  // Top section
-  const body = document.querySelector('body');
-  const header = document.createElement('header');
-  const nav = document.createElement('nav');
-  const navLinks = ['Home', 'Menu', 'About'];
-
-  const logoName = document.createElement('h1');
-  logoName.textContent = 'Burger Max';
-
-  navLinks.map(link => {
-    const newLink = createElemWithClass('button', `${link.toLowerCase()}-btn`);
-    newLink.textContent = link;
-    nav.appendChild(newLink);
-  })
-
-  header.appendChild(logoName);
-  header.appendChild(nav);
-  body.appendChild(header);
-
   // Top Section - Hero Area
-  const content = document.createElement('div');
-  content.setAttribute('id', 'content');
-  body.appendChild(content);
+  const content = document.querySelector('#content');
 
   const topContent = createElemWithClass('div', 'top-content');
   content.appendChild(topContent);
