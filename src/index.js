@@ -11,4 +11,3 @@ homeBtn.addEventListener('click', () => {
 });
 
 home();
-console.log('testing');
