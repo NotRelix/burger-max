@@ -56,6 +56,63 @@ function home() {
   const heroBanner = createElemWithClass('img', 'hero-banner');
   heroBanner.src = burgerMaxImage;
   topContent.appendChild(heroBanner);
+
+  const horizontalLine = document.createElement('hr');
+  content.appendChild(horizontalLine);
+
+  // Middle Section - Open Hours
+  const bodyContent = createElemWithClass('div', 'body-content');
+  content.appendChild(bodyContent);
+
+  const bodyHeader = document.createElement('h1');
+  bodyHeader.textContent = 'OPEN HOURS';
+  bodyContent.appendChild(bodyHeader);
+
+  const scheduleData = [
+    {
+      day: 'Monday',
+      time: '8AM - 6PM',
+    },
+    {
+      day: 'Tuesday',
+      time: '8AM - 6PM',
+    },
+    {
+      day: 'Wednesday',
+      time: '8AM - 6PM',
+    },
+    {
+      day: 'Thursday',
+      time: '8AM - 6PM',
+    },
+    {
+      day: 'Friday',
+      time: '8AM - 6PM',
+    },
+    {
+      day: 'Saturday',
+      time: '8AM - 4PM',
+    },
+    {
+      day: 'Sunday',
+      time: 'Closed',
+    },
+  ];
+
+  const table = document.createElement('table');
+  bodyContent.appendChild(table);
+  scheduleData.map(data => {
+    const row = document.createElement('tr');
+    table.appendChild(row);
+
+    const tHead = document.createElement('th');
+    tHead.textContent = data.day;
+    row.appendChild(tHead);
+
+    const tData = document.createElement('td');
+    tData.textContent = data.time;
+    row.appendChild(tData);
+  })
 }
 
 export default home;
