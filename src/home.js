@@ -1,4 +1,5 @@
 import './style.css';
+import burgerMaxImage from '../public/burger-max.png';
 
 function createElemWithClass(elemName, className) {
   const newElem = document.createElement(elemName);
@@ -53,7 +54,7 @@ function home() {
   btnContainer.appendChild(ctaBtn);
 
   const heroBanner = createElemWithClass('img', 'hero-banner');
-  heroBanner.src = '../public/burger-max.png';
+  heroBanner.src = burgerMaxImage;
   topContent.appendChild(heroBanner);
 }
 
