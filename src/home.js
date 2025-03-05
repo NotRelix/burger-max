@@ -113,6 +113,81 @@ function home() {
     tData.textContent = data.time;
     row.appendChild(tData);
   })
+
+  // Bottom Section: Contact Us
+  const bottomContent = createElemWithClass('div', 'bottom-content');
+  content.appendChild(bottomContent);
+
+  const bottomHeader = document.createElement('h1');
+  bottomHeader.textContent = 'GET IN TOUCH';
+  bottomContent.appendChild(bottomHeader);
+
+  const contactContainer = createElemWithClass('div', 'contact-container');
+  bottomContent.appendChild(contactContainer);
+
+  const contactContent = createElemWithClass('div', 'contact-content');
+  contactContainer.appendChild(contactContent);
+
+  const contactHeader = document.createElement('h1');
+  contactHeader.textContent = 'Contact Us';
+  contactContent.appendChild(contactHeader);
+
+  const contactDesc = document.createElement('p');
+  contactDesc.textContent = 'Have questions or need assistance? Get in touch with us! Whether it’s about our menu, your order, or just to say hi, we’re here to help.';
+  contactContent.appendChild(contactDesc);
+
+  const formContainer = createElemWithClass('div', 'form-container');
+  contactContainer.appendChild(formContainer);
+
+  const form = document.createElement('form');
+  form.action = '#';
+  formContainer.appendChild(form);
+
+  const formDetails = [
+    {
+      label: 'First Name',
+      id: 'first-name',
+      inputType: 'text',
+    },
+    {
+      label: 'Last Name',
+      id: 'last-name',
+      inputType: 'text',
+    },
+    {
+      label: 'Email',
+      id: 'email',
+      inputType: 'email',
+    },
+  ];
+
+  formDetails.map(item => {
+    const label = document.createElement('label');
+    label.htmlFor = item.id;
+    label.textContent = item.label;
+    form.append(label);
+
+    const input = document.createElement('input');
+    input.type = item.inputType;
+    input.id = item.id;
+    form.appendChild(input);
+  });
+
+  const labelMessage = document.createElement('label');
+  labelMessage.htmlFor = 'message';
+  labelMessage.textContent = 'Message';
+  form.appendChild(labelMessage);
+  
+  const textArea = document.createElement('textarea');
+  textArea.name = 'message';
+  textArea.id = 'message';
+  textArea.setAttribute('rows', 6);
+  form.appendChild(textArea);
+
+  const submitBtn = document.createElement('button');
+  submitBtn.type = 'submit';
+  submitBtn.textContent = 'Submit';
+  form.appendChild(submitBtn);
 }
 
 export default home;
