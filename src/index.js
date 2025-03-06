@@ -16,4 +16,9 @@ menuBtn.addEventListener('click', () => {
   menu();
 });
 
+aboutBtn.addEventListener('click', () => {
+  content.innerHTML = '';
+  
+})
+
 home();
