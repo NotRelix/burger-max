@@ -10,6 +10,18 @@ function createElemWithClass(elemName, className) {
   return newElem;
 }
 
+function getHeaderTitle(title) {
+  let newTitle;
+  if (title === 'featured') {
+    newTitle = 'Featured';
+  } else if (title === 'bestSellers') {
+    newTitle = 'Best Sellers';
+  } else if (title === 'bundles') {
+    newTitle = 'Bundles';
+  }
+  return newTitle;
+}
+
 function menu() {
   const content = document.querySelector('#content');
 
@@ -77,7 +89,7 @@ function menu() {
     container.appendChild(list);
 
     const header = createElemWithClass('h1', 'header');
-    header.textContent = section;
+    header.textContent = getHeaderTitle(section);
     list.appendChild(header);
 
     const cards = createElemWithClass('div', 'cards');

@@ -59,16 +59,19 @@ button {
   background-color: #386641;
 }
 
-/* Menu Items */
-#content {
-  padding: 36px 0;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--light-text);
+}
+
+.container:first-child {
+  margin-top: 36px;
+}
+
+.container:last-child {
+  margin-bottom: 36px;
 }
 
 .list {
