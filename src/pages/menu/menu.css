@@ -59,7 +59,11 @@ button {
   background-color: #386641;
 }
 
-/* Featured */
+/* Menu Items */
+#content {
+  padding: 36px 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
