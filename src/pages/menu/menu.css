@@ -59,6 +59,11 @@
   margin-top: auto;
   padding: 8px;
   font-weight: bold;
+  transition: 100ms all ease-in-out;
+}
+
+.card > button:hover {
+  background-color: #edae49;
 }
 
 img {
