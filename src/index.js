@@ -1,5 +1,6 @@
 import home from './pages/home/home.js';
 import menu from './pages/menu/menu.js';
+import about from './pages/about/about.js';
 
 const homeBtn = document.querySelector('.home-btn');
 const menuBtn = document.querySelector('.menu-btn');
@@ -18,7 +19,7 @@ menuBtn.addEventListener('click', () => {
 
 aboutBtn.addEventListener('click', () => {
   content.innerHTML = '';
-  
+  about();
 })
 
 home();
