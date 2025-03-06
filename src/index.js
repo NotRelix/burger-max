@@ -20,6 +20,13 @@ menuBtn.addEventListener('click', () => {
 aboutBtn.addEventListener('click', () => {
   content.innerHTML = '';
   about();
+});
+
+content.addEventListener('click', (e) => {
+  if (e.target.classList.contains('cta')) {
+    content.innerHTML = '';
+    menu();
+  }
 })
 
 home();

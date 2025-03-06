@@ -7,58 +7,6 @@
   --header-background: #edae49;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-  background-color: var(--background);
-}
-
-p {
-  line-height: 1.5;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 8vw;
-  background-color: var(--nav-background);
-  color: var(--light-text);
-}
-
-nav {
-  display: flex;
-  gap: 16px;
-}
-
-nav > button {
-  font-size: 14px;
-  padding: 8px 24px;
-  color: var(--light-text);
-}
-
-button {
-  border-radius: 8px;
-  border-style: none;
-}
-
-.home-btn {
-  background-color: #e64e5b;
-}
-
-.menu-btn {
-  background-color: #e76f51;
-}
-
-.about-btn {
-  background-color: #386641;
-}
-
 .container {
   display: flex;
   flex-direction: column;

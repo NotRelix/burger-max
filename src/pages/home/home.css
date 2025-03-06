@@ -54,16 +54,33 @@ hr {
   border-color: var(--hr-color);
 }
 
-.home-btn {
+.home-btn,
+.cta {
   background-color: #e64e5b;
+  transition: background-color 100ms ease-in-out;
+}
+
+.home-btn:hover,
+.cta:hover {
+  background-color: #ff5866;
 }
 
 .menu-btn {
   background-color: #e76f51;
+  transition: background-color 100ms ease-in-out;
+}
+
+.menu-btn:hover {
+  background-color: #ff7b5a;
 }
 
 .about-btn {
   background-color: #386641;
+  transition: background-color 100ms ease-in-out;
+}
+
+.about-btn:hover{
+  background-color: #42794d;
 }
 
 #content {
@@ -104,7 +121,6 @@ hr {
 
 .cta {
   color: var(--light-text);
-  background-color: var(--cta-btn);
   font-size: 16px;
   padding: 12px 48px;
   border-radius: 16px;
@@ -191,7 +207,12 @@ form > button {
   font-size: 16px;
   padding: 8px;
   background-color: #0d425f;
+  transition: 100ms all ease-in-out;
   color: var(--lighter-text);
+}
+
+form > button:hover {
+  background-color: #104d6e;
 }
 
 input,
