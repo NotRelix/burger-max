@@ -60,21 +60,21 @@ button {
 }
 
 /* Featured */
-.feat-container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--light-text);
 }
 
-.feat-list {
+.list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 16px 0;
 }
 
-.container-header {
+.header {
   color: rgb(251, 255, 199);
   padding: 16px;
   background-color: var(--header-background);
